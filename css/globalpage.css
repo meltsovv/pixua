@@ -25,7 +25,7 @@ ul, li {
 	display: block;
 	padding: 0;
 	margin: 0;
-
+	
 }
 /*BODY*/
 
@@ -260,7 +260,7 @@ ul, li {
 	width: 50%;
 	background: none;
 	
-	font-size: 2em;
+	font-size: 1.8em;
 	color: #fafafa;
 	transition: all .5s ease;
 	border: 1px solid #ffffffa1;
@@ -271,7 +271,7 @@ ul, li {
 	width: 50%;
 	background: #ffffffa1;
 	border-radius: 10px;
-	font-size: 2em;
+	font-size: 1.8em;
 	color: #353535;
 	transition: all .5s ease;
 	cursor: pointer;
@@ -283,7 +283,7 @@ ul, li {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  font-size: 18px;
+  font-size: 1.3vh;
   width: 80%;
 
 }
@@ -851,6 +851,10 @@ ul, li {
 	.slider{
 		display: none;
 	}
+	.popup_sign_up{
+		height: 80%;
+		width: 50%;
+	}
 } 
 
 
@@ -870,7 +874,33 @@ ul, li {
  	.search{
  		font-size: 12px;
  	}
-
+	.popup_sign_up{
+		height: 80%;
+	  width: 100%
+	}
+	.sign_submit{
+		font-size: 3vh;
+	}
+	.sign_submit:hover{
+		font-size: 3vh;
+	}
+	.social .facebook{
+		font-size: 1.6vh
+	}
+	.social{
+		height: 5vh
+	}
+	.social .google{
+		font-size: 1.6vh;
+	}
+	.popup_login{
+		height: 80%;
+	  width: 90%
+	}
+	
+	
+	
+	
 
 }
 /*MEDIA*/

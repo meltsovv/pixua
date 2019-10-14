@@ -855,6 +855,11 @@ ul, li {
 		height: 80%;
 		width: 50%;
 	}
+	.popup_login{
+		height: 80%;
+		width: 50%;
+	}
+	
 } 
 
 
@@ -895,7 +900,7 @@ ul, li {
 	}
 	.popup_login{
 		height: 80%;
-	  width: 90%
+	  width: 100%
 	}
 	
 	

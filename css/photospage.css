@@ -416,10 +416,24 @@ ul, li {
   color: #fff;
   font-size: 24px; }
 
+.album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify; }
+
+.size_photo {
+  max-height: 293px;
+  margin: 10px auto; }
+
 .footer {
   background: #0009;
   position: absolute;
-  top: 100%;
   width: 100%; }
 
 .footer_nav {

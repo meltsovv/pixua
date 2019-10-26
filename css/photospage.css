@@ -417,6 +417,10 @@ ul, li {
   font-size: 24px; }
 
 .album {
+  height: 100%;
+  position: relative; }
+
+.flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,9 +431,56 @@ ul, li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify; }
 
-.size_photo {
+.items {
   max-height: 293px;
-  margin: 10px auto; }
+  margin: 10px auto;
+  position: relative; }
+
+.size_photo {
+  max-height: 293px; }
+
+.border_right {
+  width: 30px;
+  height: 100%;
+  background: #262626;
+  position: absolute;
+  z-index: 1; }
+
+.border_left {
+  width: 30px;
+  height: 100%;
+  background: #262626;
+  position: absolute;
+  right: 0;
+  z-index: 1; }
+
+.desct {
+  position: absolute;
+  top: 88%;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 100%);
+  opacity: 0;
+  height: 6%;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  padding: 10px 0px 8px 0px; }
+  .desct a {
+    color: #fafafa;
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: lowercase;
+    margin-left: 20px; }
+  .desct a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px;
+    border-radius: 5px; }
+
+.items:hover .desct {
+  opacity: 1; }
 
 .footer {
   background: #0009;

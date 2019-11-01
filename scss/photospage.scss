@@ -4,9 +4,196 @@ $bgsign_log: #1a1919bf;
 $color_sign_log: #fafafa;
 $color_sign_log_hov: #bbb;
 
+#preloader{
+	background: #262626;
+	align-items: center;
+	display: flex;
+	justify-content:center;
+	height: 100%;
+	width: 100%; 
+	position: fixed;
+	z-index: 2;	
+}
+
+.cssload-thecube {
+	width: 45px;
+	height: 45px;
+	margin: 0 auto;
+	margin-top: 30px;
+	position: relative;
+	transform: rotateZ(45deg);
+		-o-transform: rotateZ(45deg);
+		-ms-transform: rotateZ(45deg);
+		-webkit-transform: rotateZ(45deg);
+		-moz-transform: rotateZ(45deg);
+}
+.cssload-thecube .cssload-cube {
+	position: relative;
+	transform: rotateZ(45deg);
+		-o-transform: rotateZ(45deg);
+		-ms-transform: rotateZ(45deg);
+		-webkit-transform: rotateZ(45deg);
+		-moz-transform: rotateZ(45deg);
+}
+.cssload-thecube .cssload-cube {
+	float: left;
+	width: 50%;
+	height: 50%;
+	position: relative;
+	transform: scale(1.1);
+		-o-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+}
+.cssload-thecube .cssload-cube:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(35,201,210);
+	animation: cssload-fold-thecube 2.16s infinite linear both;
+		-o-animation: cssload-fold-thecube 2.16s infinite linear both;
+		-ms-animation: cssload-fold-thecube 2.16s infinite linear both;
+		-webkit-animation: cssload-fold-thecube 2.16s infinite linear both;
+		-moz-animation: cssload-fold-thecube 2.16s infinite linear both;
+	transform-origin: 100% 100%;
+		-o-transform-origin: 100% 100%;
+		-ms-transform-origin: 100% 100%;
+		-webkit-transform-origin: 100% 100%;
+		-moz-transform-origin: 100% 100%;
+}
+.cssload-thecube .cssload-c2 {
+	transform: scale(1.1) rotateZ(90deg);
+		-o-transform: scale(1.1) rotateZ(90deg);
+		-ms-transform: scale(1.1) rotateZ(90deg);
+		-webkit-transform: scale(1.1) rotateZ(90deg);
+		-moz-transform: scale(1.1) rotateZ(90deg);
+}
+.cssload-thecube .cssload-c3 {
+	transform: scale(1.1) rotateZ(180deg);
+		-o-transform: scale(1.1) rotateZ(180deg);
+		-ms-transform: scale(1.1) rotateZ(180deg);
+		-webkit-transform: scale(1.1) rotateZ(180deg);
+		-moz-transform: scale(1.1) rotateZ(180deg);
+}
+.cssload-thecube .cssload-c4 {
+	transform: scale(1.1) rotateZ(270deg);
+		-o-transform: scale(1.1) rotateZ(270deg);
+		-ms-transform: scale(1.1) rotateZ(270deg);
+		-webkit-transform: scale(1.1) rotateZ(270deg);
+		-moz-transform: scale(1.1) rotateZ(270deg);
+}
+.cssload-thecube .cssload-c2:before {
+	animation-delay: 0.265s;
+		-o-animation-delay: 0.265s;
+		-ms-animation-delay: 0.265s;
+		-webkit-animation-delay: 0.265s;
+		-moz-animation-delay: 0.265s;
+}
+.cssload-thecube .cssload-c3:before {
+	animation-delay: 0.54s;
+		-o-animation-delay: 0.54s;
+		-ms-animation-delay: 0.54s;
+		-webkit-animation-delay: 0.54s;
+		-moz-animation-delay: 0.54s;
+}
+.cssload-thecube .cssload-c4:before {
+	animation-delay: 0.805s;
+		-o-animation-delay: 0.805s;
+		-ms-animation-delay: 0.805s;
+		-webkit-animation-delay: 0.805s;
+		-moz-animation-delay: 0.805s;
+}
 
 
 
+@keyframes cssload-fold-thecube {
+	0%, 10% {
+		transform: perspective(84px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		transform: perspective(84px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		transform: perspective(84px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-o-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-o-transform: perspective(84px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-o-transform: perspective(84px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-o-transform: perspective(84px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-ms-transform: perspective(84px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-ms-transform: perspective(84px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-ms-transform: perspective(84px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-webkit-transform: perspective(84px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-webkit-transform: perspective(84px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-webkit-transform: perspective(84px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-moz-transform: perspective(84px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-moz-transform: perspective(84px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-moz-transform: perspective(84px) rotateY(180deg);
+		opacity: 0;
+	}
+}
 
 
 
@@ -18,7 +205,7 @@ body {
 	color: $fontcolor;
 	letter-spacing: 0.09em;
 	text-transform: uppercase;
-
+	
 }
 h1, h2, h3, h4, h5, h6{
 	margin: 0;
@@ -30,6 +217,7 @@ a, a:hover, a:active {
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+	
 }
 ul, li {
 	display: block;
@@ -228,6 +416,9 @@ ul, li {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	width: 80%;
+	input{
+		padding-left: 10px;
+	}
 }
 .email_p{
 	margin-bottom: -20px; 
@@ -280,16 +471,18 @@ ul, li {
 	transition: all .5s ease;
 	border: 1px solid #ffffffa1;
 	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .sign_submit:hover {
 	-webkit-transform: translate(50%,50%);
 	-ms-transform: translate(50%,50%);
 	transform: translate(50%,50%);
 	width: 50%;
-	background: #ffffffa1;
+	background: #32dd23;
 	border-radius: 10px;
 	font-size: 1.8em;
-	color: #353535;
+	color: #fff;
 	-webkit-transition: all .5s ease;
 	-o-transition: all .5s ease;
 	transition: all .5s ease;
@@ -360,7 +553,7 @@ ul, li {
 	width: 100%;
 	position: fixed;
 	height: 10%;
-	z-index: 1000;
+	z-index: 1;
 	background: #0009;
 
 }
@@ -482,6 +675,10 @@ ul, li {
 	margin: 10px auto;
 	position: relative;
 	cursor: pointer;
+	box-shadow: 5px 5px 15px #000;
+}
+.items:hover{
+	box-shadow: 5px 5px 15px #aeaeae;
 }
 .size_photo{
 	max-height: 293px;
@@ -562,10 +759,11 @@ ul, li {
 	background: #171717;
 	z-index: 1;
 	border-radius: 10px;
+	border: 1px solid #bbb;
 	.close{
 		position: absolute;
-		right: 5px;
-		top: 5px;
+		right: 15px;
+		top: 15px;
 		font-size: 25px;
 		z-index: 1;
 		a:hover{
@@ -655,6 +853,10 @@ ul, li {
 		i{
 			margin-right: 5px;
 		}
+		}
+		a:hover{
+			background:#ff0047;
+			color:#fff;
 		}
 		a.active{
 			background:transparent;
@@ -749,7 +951,12 @@ ul, li {
 		color:#222;
 		border-radius: 40px;	
 		display: block;
-		
+		font-weight: 600;
+		span{
+			position: absolute;
+			right: 5%;
+			font-weight: normal;
+		}
 	}
 	.arrow_count{
 		display: flex;
@@ -941,6 +1148,24 @@ ul, li {
 	.popup_login{
 		width: 50%;
 	}
+	.pageSlide{
+		margin-top: 6%;
+	}
+	#slider{
+		height: 70%;
+	}
+	.photo_profile{
+		width: 10vw;
+		height: 6vh;
+		margin: 0;	
+
+	}
+	.like_anim{
+		top: 10%;
+		left: 50%;
+	}
+
+
 } 
 
 

@@ -1,3 +1,6 @@
+a:focus {
+  outline: none; }
+
 #preloader {
   background: #262626;
   -webkit-box-align: center;
@@ -634,14 +637,14 @@ ul, li {
 
 .border_right {
   width: 30px;
-  height: 100%;
+  height: 101%;
   background: #262626;
   position: absolute;
   z-index: 1; }
 
 .border_left {
   width: 30px;
-  height: 100%;
+  height: 101%;
   background: #262626;
   position: absolute;
   right: 0;

@@ -3,7 +3,7 @@ $fontcolor: #fff;
 $bgsign_log: #1a1919bf;
 $color_sign_log: #fafafa;
 $color_sign_log_hov: #bbb;
-
+a:focus { outline: none; }
 #preloader{
 	background: #262626;
 	align-items: center;

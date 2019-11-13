@@ -12,8 +12,6 @@ $('.js-button_log-campaign').click(function(){
 	$('section').css('filter','blur(5px)');
 	$('.js-overlay_log-campaign').fadeIn();
 	$('.js-overlay_sign-campaign').fadeOut();
-	
-
 });
 $('.js-close_log-campaign').click(function(){
 	$('.js-overlay_log-campaign').fadeOut();

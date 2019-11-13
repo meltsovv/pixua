@@ -7,6 +7,7 @@ function showSlide(n) {
 	document.getElementById("slider").style.display = "block";
 	document.getElementById('first').style.filter = "blur(5px)";
 	document.getElementById('photo').src = `img/photos/Фото${n}.jpeg`;
+	document.getElementById('download').href = `img/photos/Фото${n}.jpeg`;
 	document.getElementById('count').innerHTML =`${n}`;
 	for (let i = 1 ; i <= 41; i++) {
 		document.getElementById(`info${i}`).setAttribute('class','disnone');
@@ -35,6 +36,7 @@ function plusSlides(i){
 	document.getElementById(`info${n}`).setAttribute('class','info');
 	
 	document.getElementById('photo').src = `img/photos/Фото${n}.jpeg`;	
+	document.getElementById('download').href = `img/photos/Фото${n}.jpeg`;
 	document.getElementById('count').innerHTML =`${n}`;
 }
 
